@@ -1,0 +1,114 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  background: #0a0a0a;
+  color: #e0e0e0;
+  line-height: 1.6;
+}
+
+header {
+  text-align: center;
+  padding: 3rem 1rem;
+  background: linear-gradient(135deg, #1a1a2e, #16213e);
+  border-bottom: 2px solid #e94560;
+}
+
+header h1 {
+  font-size: 3rem;
+  color: #fff;
+  text-shadow: 0 0 10px #e94560, 0 0 20px #e94560;
+  letter-spacing: 2px;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #e94560;
+  margin-top: 0.5rem;
+  font-weight: bold;
+}
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.card {
+  background: #1a1a2e;
+  border-radius: 16px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border: 1px solid #2a2a4a;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(233, 69, 96, 0.2);
+}
+
+.card h2 {
+  color: #e94560;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.card p {
+  color: #b0b0b0;
+  margin-bottom: 1.5rem;
+}
+
+.image-container {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.site-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  border: 2px solid #2a2a4a;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Заглушка, если картинки ещё нет */
+.site-img:not([src]), .site-img[src=""] {
+  display: none;
+}
+
+.img-caption {
+  font-size: 0.8rem;
+  color: #666;
+  margin-top: 0.5rem;
+  font-style: italic;
+}
+
+.tg-btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background: #e94560;
+  color: #fff;
+  border-radius: 12px;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: background 0.2s, transform 0.2s;
+  box-shadow: 0 4px 15px rgba(233, 69, 96, 0.4);
+}
+
+.tg-btn:hover {
+  background: #ff6b6b;
+  transform: scale(1.05);
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  color: #555;
+  font-size: 0.9rem;
+  border-top: 1px solid #2a2a4a;
+}
